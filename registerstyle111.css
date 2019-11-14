@@ -1,0 +1,94 @@
+.topmostbar{
+ background-color: #ea3a49;
+	padding:15px;
+}
+
+
+/*navbar*/
+
+.container10 img{
+	width:70%;
+    margin-left: 50px;
+    margin-right: 50px;}
+
+.navbar{
+	background-color:#f3c5c1;
+	 position: sticky;
+
+}
+
+/*menu*/
+.menu{
+	position: relative;
+top: 0;
+width: auto;
+float: right;
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0px;
+padding: 7px;
+text-align: right;
+}
+
+
+.menu li {
+  float: right;
+}
+
+.menu li a {
+color: black;
+text-align: center;
+padding: 10px 10px;
+text-decoration: none;
+
+  
+}
+
+.menu li a:hover {
+  background-color: white;
+}
+.registration_form{
+	padding:90px;
+}
+
+.aboutbody{
+	background-image:linear-gradient(to left, #fffbd5,#b20a2c  )
+}
+.container1{
+  border-radius: 5px;
+ 
+  padding: 20px;
+}
+
+/**/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E52237;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:150px;
+}
+
+/*footer */
+.footer{
+ background-color: black;
+	padding:20px;
+}
+.footer p{
+ color: white;
+}

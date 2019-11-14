@@ -1,0 +1,12 @@
+.contact1{
+ background-image: url('pink.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+     padding: 80px;
+}
+
+.contactform{
+	
+     border: 1px solid black;
+
+}
