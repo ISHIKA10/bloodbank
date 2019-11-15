@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>blood bank blog</title>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="bb112.css">
+
    <style>
     h4{
         color:red;
@@ -18,74 +8,8 @@
 </head>
 <body>
 
-<section class="topmostbar">
-	<div class="container ">	
-		<div class="row ">
-			<div class="col-md-6">
-					<h5 style="text-allign:center;">Welcome to Blood Donation Center.</h5>
-			</div>	
-			
-			
-				
-		<?php
-
-					if(isset( $_SESSION['login_user'])){?>
-						
-						<div class="col-md-6">
-							<ul style="display:inline-block;">
-								<li><?php echo"Hello ".$_SESSION['login_user']."<br><br>";?></li>
-								<li><a href="http://localhost/bloodbank/logout.php" ">Logout</a></li>
-							</ul>
-							 
-						</div>
-						 
-								
-					<?php }
-					else{?>
-
-						<div class="col-md-6 menu ">	
-							<ul>
-							 <li><a href="http://localhost/bloodbank/register.php" >SIGN UP</a></li>
-							  <li><a href="http://localhost/bloodbank/login.php" >LOG IN</a></li>
-							 </ul>
-						</div>
-					<?php }
-
-
-		?>
-		
-		
-	</div>
+	<?php include("header110.php"); ?>
 	
-	
-	
-				
-		</div>			
-	</div>
-</section>
-	
-	
-	<header class="navbar">
-<div class="container10">
-	<div class="row  ">
-	
-		<div class="col-md-4">	
-			<img src="footerimg.png" alt="bb" class="img-fluid">
-		</div>
-		
-		<div class="col-md-8 menu">	
-			<ul>
-			  <li><a href="http://localhost/bloodbank/tips.php" >Blog</a></li> 
-			  <li><a href="http://localhost/bloodbank/contact.php">Contact</a></li> 
-			  <li><a href="http://localhost/bloodbank/REQUEST.php" >Request Blood</a></li>
-			    <li><a  href="http://localhost/bloodbank/about.php">About</a></li>
-			  <li><a  href="http://localhost/bloodbank/bloodbank.php">Home</a></li>
-			</ul>
-		</div>
-		
-	</div>
-	</div>
-</header>
 <div class="container">
     <h2 style="text-align:center;color:orangered;margin-top: 10px;">DONORS GUIDELINES</h2>
     <h4>Eligibilities</h4>
@@ -139,17 +63,8 @@
 
     </ul>
 </div>
-<section class="footer">
-<div class="container ">	
-<div class="row">
-	<div class="col-md-5">
-	 <img src="footerimg.png" alt="bb" class="img-fluid">
-	</div>
-	<div class="col-md-7">
-	<p>This Portal is developed for helping those who need blood in emergency conditions. So its our request to register as much as posiible so that we can find the needed blood group</p>
-	</div>
-</div>			
-</div>
-</section>
+
+
+<?php include("footer.php"); ?>
 </body>
 </html>
